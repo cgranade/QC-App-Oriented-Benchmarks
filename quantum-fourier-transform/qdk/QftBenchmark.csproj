@@ -1,0 +1,13 @@
+<!-- This line declares that the project is a Q# project, built using the
+     Microsoft.Quantum.Sdk package. -->
+<Project Sdk="Microsoft.Quantum.Sdk/0.18.2108160310">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <!-- This property tells the qsharp package to automatically load
+             your project and use it as a workspace. -->
+        <IQSharpLoadAutomatically>true</IQSharpLoadAutomatically>
+    </PropertyGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+name: qc-app-benchmarks
+channels:
+- microsoft
+- conda-forge
+dependencies:
+- qsharp
+- notebook
+- matplotlib
+- qutip # Used for defining noise models.
+- pip
+- ipython
+- pip:
+  - azure-quantum
