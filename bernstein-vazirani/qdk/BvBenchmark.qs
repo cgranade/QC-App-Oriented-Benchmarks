@@ -8,7 +8,7 @@ namespace SriInternational.QcAppBenchmarks.BersteinVazirani {
 
     operation ApplyOracle(secretNumber : Int, register : Qubit[], target : Qubit) : Unit is Adj + Ctl {
         for (patternBit, controlQubit) in Zipped(IntAsBoolArray(secretNumber, Length(register)), register) {
-            if (patternBit) {
+            if patternBit {
                 Controlled X([controlQubit], target);
             }
         }
